@@ -12,5 +12,63 @@
 body {
     font-family: 'Inter', '맑은 고딕', sans-serif;
     color: $text-dark;
-
+    font-size: 18px;
 }
+
+.container {
+    max-width: $container;
+    margin: 0 auto;
+    border: 2px solid red;
+}
+
+.btn {
+    background-color: $sub-color;
+    color: $text-light;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 10px 2rem;
+}
+
+// 인트로 + New 영역
+.intro-box {
+    display: flex;
+    gap: 20px;
+    section.intro { 
+        width: 70%;
+        background: #abc;
+    }
+    aside.new {
+        width: 30%;
+        background: #000;
+        color: $text-light;
+    }
+}
+.intro {
+    .intro-img-box { 
+        img { width: 100%; }
+    }
+    .text-box {
+        display: flex;
+        h1 { 
+            width: 50%; 
+            font-size: 60px;
+            padding-right: 1em;
+            line-height: 70px;
+        }
+        .text { 
+            width: 50%;
+            p { margin-bottom: 2rem; }
+        }
+        padding: 2rem 20px;
+    }
+}
+
+
+// main
+main {
+    &.container {
+        background: #999;
+    }
+}
+
